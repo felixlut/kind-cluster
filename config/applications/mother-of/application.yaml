@@ -10,7 +10,7 @@ spec:
   project: mother-of
   source:
     path: config
-    repoURL: https://github.com/felixlut/mother-of
+    repoURL: https://github.com/felixlut/kind-cluster
     targetRevision: HEAD
   syncPolicy:
     automated: {}
