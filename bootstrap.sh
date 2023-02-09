@@ -27,6 +27,8 @@ kubectl apply -k config/infra
   #--timeout=300s
 
 
+# Apply user level applications
+kubectl apply -k config/applications
 
 # Cleanup
 # kind delete cluster --name ${CLUSTER_NAME}
