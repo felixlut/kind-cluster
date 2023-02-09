@@ -4,4 +4,3 @@ resources:
 - application.yaml
 - app-project.yaml
 - namespace.yaml
-- pr-generator.yaml

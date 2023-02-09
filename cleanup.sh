@@ -12,4 +12,4 @@ kubectl get pods --all-namespaces -o jsonpath="{.items[*].spec.containers[*].ima
 cat kind-settings/preloaded-images-tmp.txt >> kind-settings/preloaded-images.txt
 rm -rf kind-settings/preloaded-images-tmp.txt
 
-kind delete cluster --name ${CLUSTER_NAME}
+# kind delete cluster --name ${CLUSTER_NAME}
