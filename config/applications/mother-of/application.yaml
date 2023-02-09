@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: mother-of
+    namespace: argocd
     server: https://kubernetes.default.svc
   project: mother-of
   source:
