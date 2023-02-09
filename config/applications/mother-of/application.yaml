@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mother-of
+  namespace: argocd
+spec:
+  destination:
+    namespace: mother-of
+    server: https://kubernetes.default.svc
+  project: mother-of
+  source:
+    path: config
+    repoURL: https://github.com/felixlut/mother-of
+    targetRevision: HEAD
+  syncPolicy:
+    automated: {}

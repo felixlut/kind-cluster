@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: mother-of
+  namespace: argocd
+spec:
+  destinations:
+  - name: in-cluster
+    namespace: argocd
+    server: https://kubernetes.default.svc
+  orphanedResources:
+    warn: true
+  sourceRepos:
+  - https://github.com/felixlut/kind-cluster
