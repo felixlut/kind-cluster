@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: wordhandler
+  namespace: argocd
+spec:
+  destination:
+    namespace: wordhandler
+    server: https://kubernetes.default.svc
+  project: wordhandler
+  source:
+    path: config
+    repoURL: https://github.com/felixlut/wordhandler
+    targetRevision: HEAD
+  syncPolicy:
+    automated: {}

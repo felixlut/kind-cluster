@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: wordhandler
+  namespace: argocd
+spec:
+  destinations:
+  - name: in-cluster
+    namespace: wordhandler
+    server: https://kubernetes.default.svc
+  orphanedResources:
+    warn: true
+  sourceRepos:
+  - https://github.com/felixlut/wordhandler
