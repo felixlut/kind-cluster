@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: mother-of
   source:
-    path: config
+    path: config/applications/child-apps
     repoURL: https://github.com/felixlut/kind-cluster
     targetRevision: HEAD
   syncPolicy:
