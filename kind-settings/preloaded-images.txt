@@ -1,13 +1,6 @@
 docker.io/kindest/kindnetd:v20221004-44d545d1
 docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
 ghcr.io/dexidp/dex:v2.35.3
-quay.io/argoproj/argocd:v2.6.0
-redis:7.0.7-alpine
-registry.k8s.io/coredns/coredns:v1.9.3
-registry.k8s.io/etcd:3.5.4-0
-docker.io/kindest/kindnetd:v20221004-44d545d1
-docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
-ghcr.io/dexidp/dex:v2.35.3
 ghcr.io/felixlut/wordhandler/cli:latest
 ghcr.io/felixlut/wordhandler/emitter:latest
 ghcr.io/felixlut/wordhandler/receiver:latest

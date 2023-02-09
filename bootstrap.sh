@@ -13,7 +13,7 @@ kind create cluster --name ${CLUSTER_NAME}
 # tr -s '[[:space:]]' '\n' |\
 # sort |\
 # uniq > kind-settings/preloaded-images.txt 
-cat kind-settings/preloaded-images.txt | xargs -I{} sh -c 'docker pull {} && kind load docker-image {} {} --name ${CLUSTER_NAME}'
+# cat kind-settings/preloaded-images.txt | xargs -I{} sh -c 'docker pull {} && kind load docker-image {} {} --name ${CLUSTER_NAME}'
 
 # Apply infra resources (argocd, ...)
 kubectl apply -k config/infra
@@ -27,8 +27,9 @@ kubectl apply -k config/infra
   #--timeout=300s
 
 
+
 # Apply user level applications
-kubectl apply -k config/applications
+# kubectl apply -k config/applications
 
 # Cleanup
 # kind delete cluster --name ${CLUSTER_NAME}
